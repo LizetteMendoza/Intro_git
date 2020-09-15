@@ -12,7 +12,7 @@ int main(){
     cout<<"Hola "<<nombre<<endl;
     cout<<"ingrese su edad: ";
     cin>>edad;
-    cout<<"Vas a cumpir "<<edad+1;
+    cout<<"Vas a cumplir "<<edad+1;
 
     return 0;
 }
