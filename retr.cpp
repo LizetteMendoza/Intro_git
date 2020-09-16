@@ -1,4 +1,5 @@
 #include<iostream>
+# include "personaje.h"
 
 
 using namespace std;
@@ -66,6 +67,7 @@ int main(){
             break;
 
         case '3':
+            capturar_personajes();
             break;
         
         default:
