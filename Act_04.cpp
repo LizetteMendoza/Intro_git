@@ -26,14 +26,23 @@ void capturar_enteros(){
     cout<<"La suma es: "<<suma<<endl;
     cout<<"El promedio es: "<<promedio<<endl;
 
-    
 }
 
+void mostrar_cadena(int n, char cadena[]){
+
+    for (size_t i = 0; i < n; i++)  
+    {
+        cout<<cadena<<endl;
+    }
+    
+}
 
 
 int main(){
     
     char opcion;
+    char cadena[20];
+    int n;
 
     do{
         cout<<" 1) Capturar enteros"<<endl;
@@ -46,7 +55,11 @@ int main(){
         switch(opcion){
         case '1': capturar_enteros();
             break;
-        case '2': 
+        case '2': cout<<"Escribe una cadena de caracteres: ";
+                  cin.getline(cadena,20,'\n');
+                  cout<<"Veces que quieres que se imprima la cadena: ";
+                  cin>>n;
+                  mostrar_cadena(n, cadena);
             break;
 
         case '3': 
@@ -58,7 +71,7 @@ int main(){
     }while(opcion!='0');
 
     
-
+    system("pause");
     return 0;
 
 }
