@@ -11,7 +11,7 @@ void capturar_enteros(){
 
     for (size_t i = 0; i < 5; i++)
     {
-        cout<<"ingrese un numero: ";
+        cout<<"\nIngrese un numero: ";
         cin>>enteros[i];
     }
     for (size_t i = 0; i < 5; i++)
@@ -26,6 +26,7 @@ void capturar_enteros(){
     promedio=suma/5.0;
     cout<<"La suma es: "<<suma<<endl;
     cout<<"El promedio es: "<<promedio<<endl;
+    cout<<"\n";
 
 }
 
@@ -34,8 +35,9 @@ void mostrar_cadena(int n, char cadena[]){
     for (size_t i = 0; i < n; i++)  
     {
         cout<<cadena<<endl;
-    }
-    
+    } 
+    cout<<"\n";
+
 }
 
 
@@ -48,7 +50,8 @@ int main(){
     do{
         cout<<" 1) Capturar enteros"<<endl;
         cout<<" 2) Mostrar cadena n veces"<<endl;
-        cout<<" 3) Agregar personaje"<<endl;
+        cout<<" 3) Agregar personajes"<<endl;
+        cout<<" 4) Mostrar personajes"<<endl;
         cout<<" 0) Salir"<<endl;
         cin>>opcion;
         fflush(stdin);
@@ -66,14 +69,15 @@ int main(){
         case '3': capturar_personajes();
             break;
 
+        case '4': mostrar_personajes();
+            break;
 
         default: "No es una opción valida";
         }
+        cout<<"\n";
 
     }while(opcion!='0');
 
-    
     system("pause");
     return 0;
-
 }
